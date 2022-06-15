@@ -1,0 +1,10 @@
+type: static
+
+cname:
+  - hackathon-22spring-17-server.trap.games
+http_proxy: 8080
+https: hard
+use_mariadb: true
+
+startup: go build -o main
+entrypoint: ./main
